@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Nuthouse Family Site</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />
+        <link rel="stylesheet" href="app.css" />
+        <script src="app.js" type="application/javascript"></script>
+    </head>
+    <!-- The title is what appears on the tab area of the browser --> 
+    <!-- CSS lets you add common styles throughout the html page. HTML and CSS create static HTML pages -->
+    <!-- Without Javascript a page is just static. Javascript adds dynamic and interactive and changing content. An example
+    can be a date and time stamp. This changes everytime the page is loaded -->
+    <body onload = onLoad()>
+        <header class="container-fluid">
+            <h1>
+                <p>
+                    Nuthouse Family Fun
+                </p>
+            </h1> 
+
+            <nav class="container-fluid">
+                <ul class="nav navbar-inverse navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#listofthingstodo">List-of-things-to-do</a></li>                    
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- This is an example of a tag "a" and its attribute "href" -->  
+                </ul>
+            </nav>            
+
+            <a href= "https://www.dododod.poodoody/"> <img src="images/NutHouse.JPG" height="242" width="242"> </a>
+            <p> Click on the picture above to go the to NutHouse webpage </p>
+                                   
+        </header>
+
+
+        <div class = "container-fluid">
+            <!-- The div tag separates areas from the point of view of CSS. Section is really from a point of view of HTML
+            The classes here are supported in bootstrap. This is the advantage of using it. It is built for responsive designs -->
+            <div class="row">
+
+
+                <section class="col-sm-6 col-sm-push-3">
+                    <!-- Its complicated: Section and Articles are HTML tags. Not CSS. Section may have articles or acticles may
+                     have sections or a mix. Here we have many articles withing a section -->
+                    
+                    <!-- Note that you get to define 12 columns per row per ARTICLE... Each article acts as an independent unit of the grid 
+                    of 12 columns -->
+
+                    <!-- Push and Pull are concepts that allow us to balance the look between a wide browser and in iphone. 
+                    As an example, we have put the asides together at the bottom. On an iphone they appear at the bottom. One a wide browser 
+                    we use a push to to the right to push the main section to the right by 3 and use a pull to pull the aside to the left
+                    by 6. -->
+                        <article>
+                            <div class="row">              
+                                <h2>
+                                    
+                                    What is your favorite color
+                                    
+                                </h2>    
+                                    
+
+                                <div class="col-sm-6"> 
+                                    <ol>
+                                        <li>red</li>
+                                        <li>blue</li>
+                                    </ol>
+                                
+                                </div>
+
+                                <div class="col-sm-6">
+                                    Enter the number corresponding to your fav color <br>
+                                    <input id="smallnumber" type="number">
+                                    <p id="numberMessage"></p>
+                                    <button onclick="checkNumber()">Submit</button>
+                                        
+                                </div>
+                            </div>
+                        </article>
+                        
+                    
+                       <article>
+                            <div class="row">       
+                                <h2>
+                                    
+                                    What should we do with the sofa and chaise?
+                                    
+                                    
+                                </h2>
+                               
+
+                                <div class="col-sm-6">
+                                    
+                                    <ul>
+                                        <li>Type 1 for Buy </li>
+                                        <li>Type 2 for Clean</li>
+                                                
+                                    </ul>
+                                    
+                                </div>
+
+                                <div class="col-sm-6">
+                                    
+                                    Enter your answer here:   
+                                
+                                                                    
+                                </div>
+                            </div>
+                       </article> 
+                    
+                </section>
+
+                <aside class="col-sm-3 col-sm-pull-6"> 
+                        In this area I will try and post upcoming events and reminders. 
+                </aside>
+                <!-- Aside area defines a column on the page .. It is aside from the main section ...Also, the col-sm-3 is set up on the CSS 
+                of 12 columns. In this case, we have divided this page into 3 aside, 6 section and 3 aside for a total of 12 columns. The div tag 
+                allows us to define a row and a set of 12 columns based on the grid method. A div class below further allows us to add another row and 
+                subdivide that further into 12 columns. 
+                Pull and push basically push by x (in this case pull by 6) columns depending on the browser size-->   
+
+                <aside class="col-sm-3">
+                    In this area I will post the latest news regarding our family. 
+                </aside>
+                <!-- Aside is used to indicate content that is different from the rest of the page --> 
+            </div>  
+        </div>
+
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-3"></div>
+                    <div class="col-sm-6 col-sm-pull-3">
+                        <a name="contact">Contact Us</a>
+                        <p>Anytown Chamber of Commerce</p>
+                        <p>123 Main St.</p>
+                        <p>Anytown, OH 43210</p>
+                    </div>
+                </div>
+        </div>
+
+        <footer class="container-fluid"> This is exclusively for the Bala Family! You have NO right to view this page if you are NOT a member of the Bala family!
+            So, get out if you NOT a part of our family!
+            <p id="timestamp"></p>
+        </footer>
+    
+    </body>
+   
+</html>

@@ -1,0 +1,33 @@
+
+header, footer{ 
+    background-color: rgb(197, 188, 176);  
+    color: black;
+    text-align: center;
+}
+aside {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+h2 {
+    color: rgb(2, 2, 19);
+}
+
+h1 { 
+    color: rgb(3, 3, 63);
+}
+
+ol {
+    color: black
+}
+
+nav {
+    background-color: rgb(170, 162, 162) ;
+
+}
+
+section, article {
+	padding: 10px;
+	background-color: rgb(177, 199, 190);
+}
+
